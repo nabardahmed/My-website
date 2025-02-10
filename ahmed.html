@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TransMove GmbH</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            background: #333;
+            padding: 10px 20px;
+            cursor: pointer;
+            color: white;
+            font-size: 20px;
+        }
+        .menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            right: 0;
+            background: white;
+            width: 200px;
+            height: 100vh;
+            box-shadow: -3px 0 5px rgba(0, 0, 0, 0.2);
+            padding-top: 50px;
+            text-align: center;
+        }
+        .menu a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            color: #333;
+            border-bottom: 1px solid #ddd;
+        }
+        .menu a:hover {
+            background: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 80px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+        .btn {
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        .images {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .images img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        .contact {
+            margin-top: 30px;
+            padding: 20px;
+            background: #333;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .contact a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div class="navbar" onclick="toggleMenu()">☰</div>
+
+    <div class="menu" id="menu">
+        <a href="#">Tätigkeit</a>
+        <a href="#">Dienstleistungen</a>
+        <a href="#">Themen</a>
+        <a href="#">Über uns</a>
+        <a href="#">Kontakt</a>
+    </div>
+
+    <div class="container">
+        <h1>Willkommen bei TransMove GmbH!</h1>
+        <p>Ihr zuverlässiger Partner für den Transport.</p>
+        <a href="https://wa.me/491234567890" class="btn">Kontaktieren Sie uns über WhatsApp</a>
+        
+        <div class="images">
+            <img src="https://source.unsplash.com/400x300/?bus,transport" alt="Bus Bild 1">
+            <img src="https://source.unsplash.com/400x300/?public-transport" alt="Bus Bild 2">
+        </div>
+    </div>
+
+    <div class="contact">
+        <h2>Kontakt</h2>
+        <p>📍 Standort: Berlin, Deutschland</p>
+        <p>☎ Telefon: <a href="tel:+491234567890">+49 123 456 7890</a></p>
+        <p>📧 E-Mail: <a href="mailto:info@transmove.de">info@transmove.de</a></p>
+        <p>🌍 <a href="https://www.google.com/maps?q=Berlin" target="_blank">Google Maps Standort</a></p>
+    </div>
+
+</body>
+		</html>
